@@ -15,7 +15,7 @@ def ask_ai(task):
     data = {
         "model": "openai/gpt-3.5-turbo",
         "messages": [
-            {"role": "system", "content": "You are a Linux assistant running inside a proot Debian en>
+            {"role": "system", "content": "You are a Linux assistant running inside a proot Debian environment without systemd. Do not use systemctl. Return correct commands only. Return ONLY the command, no explanation, no formatting."},
             {"role": "user", "content": task}
         ]
     }
