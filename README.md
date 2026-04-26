@@ -1,13 +1,13 @@
 # Linux-cli-assistant
 A lightweight AI CLI agent for Termux+Proot Debian that translates natural language into Linux commands. 
 ---
-🤖 AI Terminal Agent (Termux + Debian)
+## AI Terminal Agent (Termux + Debian)
 
 A simple AI-powered command-line assistant that converts natural language into Linux commands and executes them safely.
 
 ---
 
-🚀 Features
+## Features
 
 - 🧠 Convert English → Linux commands
 - 💻 Works inside Termux + Proot Debian
@@ -16,7 +16,7 @@ A simple AI-powered command-line assistant that converts natural language into L
 
 ---
 
-🧱 Requirements
+## Requirements
 
 - Android device
 - Termux installed
@@ -25,24 +25,24 @@ A simple AI-powered command-line assistant that converts natural language into L
 
 ---
 
-1️⃣ Open Termux and enter Debian
+## 1️⃣ Open Termux and enter Debian
 
 ```bash
 proot-distro login debian
 ```
 
-2️⃣ Update system
+## 2️⃣ Update system
 
 ```bash
 apt update && apt upgrade -y
 ```
 
-3️⃣ Install Python
+## 3️⃣ Install Python
 
 ```bash
 apt install python3 python3-pip python3-venv -y
 ```
-4️⃣ Create virtual environment
+## 4️⃣ Create virtual environment
 
 ```bash
 python3 -m venv myenv
@@ -66,13 +66,13 @@ API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 ```
 
-7️⃣ Add API key
+## 7️⃣ Add API key
 
 ```bash
 export OPENROUTER_API_KEY="your_api_key_here"
 ```
 
-8️⃣ Run
+## 8️⃣ Run
 
 ```bash
 python agent.py
@@ -80,7 +80,7 @@ python agent.py
 
 ---
 
-Usage
+## Usage
 
 Type commands in natural language:
 
@@ -93,7 +93,7 @@ https://github.com/user-attachments/assets/8fc8e09d-2d18-4dfc-967a-6420a4580d12
 
 ---
 
-⚠️ Safety Warning
+## ⚠️ Safety Warning
 
 - Always review commands before running
 - Do NOT execute unknown or dangerous commands
@@ -101,7 +101,7 @@ https://github.com/user-attachments/assets/8fc8e09d-2d18-4dfc-967a-6420a4580d12
 
 ---
 
-🖥️ GUI Mode (Optional)
+## 🖥️ GUI Mode (Optional)
 
 You can run this inside VNC GUI:
 
@@ -116,20 +116,20 @@ python agent.py
 
 ---
 
-🧠 How It Works
+## How It Works
 
 User Input → AI API → Linux Command → Execution
 
 ---
 
-🔒 Security Note
+## 🔒 Security Note
 
 - Never expose your API key publicly
 - Use environment variables instead of hardcoding
 
 ---
 
-🚧 Limitations
+## 🚧 Limitations
 
 - No memory (single command only)
 - No GUI automation
@@ -137,10 +137,10 @@ User Input → AI API → Linux Command → Execution
 
 ---
 
-🚀 Future Improvements
+## 🚀 Future Improvements
 
 - Command history
-- Safety filter for dangerous commands
+- Safety filter for dangerous  commands
 - Multi-step task execution
 - GUI automation support
 
