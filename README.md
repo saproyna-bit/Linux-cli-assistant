@@ -97,7 +97,7 @@ AI suggests: mkdir test
 Run this command? (y/n): y
 
 ---
-
+https://github.com/user-attachments/assets/8fc8e09d-2d18-4dfc-967a-6420a4580d12
 📁 Navigation Example
 
 go inside folder test
