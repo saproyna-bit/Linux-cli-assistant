@@ -57,15 +57,7 @@ source myenv/bin/activate
 ```bash
 nano agent.py
 ```
-Modify 
-
-```python
-import requests
-import os
-
-API_KEY = os.getenv("OPENROUTER_API_KEY")
-
-```
+paste agent.py here
 
 ## 7️⃣ Add API key
 
