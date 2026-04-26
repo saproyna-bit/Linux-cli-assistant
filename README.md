@@ -1,5 +1,6 @@
 # Linux-cli-assistant
 A lightweight AI CLI agent for Termux+Proot Debian that translates natural language into Linux commands. 
+---
 🤖 AI Terminal Agent (Termux + Debian)
 
 A simple AI-powered command-line assistant that converts natural language into Linux commands and executes them safely.
@@ -10,7 +11,6 @@ A simple AI-powered command-line assistant that converts natural language into L
 
 - 🧠 Convert English → Linux commands
 - 💻 Works inside Termux + Proot Debian
-- 🖥️ Compatible with VNC GUI terminal
 - ⚠️ Confirmation before execution (safe mode)
 - 📂 Supports file & folder operations
 
@@ -25,70 +25,62 @@ A simple AI-powered command-line assistant that converts natural language into L
 
 ---
 
-⚙️ Setup Guide
-
 1️⃣ Open Termux and enter Debian
 
+```bash
 proot-distro login debian
-
----
+```
 
 2️⃣ Update system
 
+```bash
 apt update && apt upgrade -y
-
----
+```
 
 3️⃣ Install Python
 
+```bash
 apt install python3 python3-pip python3-venv -y
-
----
-
+```
 4️⃣ Create virtual environment
 
+```bash
 python3 -m venv myenv
+```
 
-Activate it:
-
+```bash
 source myenv/bin/activate
+```
+## 6️⃣ Create agent file
 
----
-
-5️⃣ Install dependencies
-
-pip install requests
-
----
-
-6️⃣ Create agent file
-
+```bash
 nano agent.py
+```
+Modify 
 
-Paste your Python code inside and save.
-
----
-
-7️⃣ Add API key (secure method)
-
-In terminal:
-
-export OPENROUTER_API_KEY="your_api_key_here"
-
-In Python file:
-
+```python
+import requests
 import os
+
 API_KEY = os.getenv("OPENROUTER_API_KEY")
 
----
+```
 
-8️⃣ Run the agent
+7️⃣ Add API key
 
+```bash
+export OPENROUTER_API_KEY="your_api_key_here"
+```
+
+8️⃣ Run
+
+```bash
 python agent.py
+```
 
 ---
 
-🧪 Usage
+Usage
 
 Type commands in natural language:
 
@@ -98,13 +90,6 @@ Run this command? (y/n): y
 
 ---
 https://github.com/user-attachments/assets/8fc8e09d-2d18-4dfc-967a-6420a4580d12
-
----
-📁 Navigation Example
-
-go inside folder test
-list files
-show current directory
 
 ---
 
@@ -120,6 +105,9 @@ show current directory
 
 You can run this inside VNC GUI:
 
+- open real vnc viewer in computer
+- get ip by typing ifconfig command in termux 
+- enter ip and port number
 - Open terminal inside VNC
 - Activate environment
 - Run:
@@ -158,12 +146,5 @@ User Input → AI API → Linux Command → Execution
 
 ---
 
-📜 License
-
 This project is for learning and experimentation purposes.
 
----
-
-🙌 Author
-
-Built by a learner exploring AI + Linux automation.
