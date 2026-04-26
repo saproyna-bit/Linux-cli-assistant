@@ -26,7 +26,7 @@ def ask_ai(task):
         result = response.json()
         output = result['choices'][0]['message']['content'].strip()
 
-        # 🔥 CLEAN OUTPUT
+        # CLEAN OUTPUT
         output = output.replace("```bash", "").replace("```", "").strip()
         output = output.split("\n")[0]  # take first line only
 
